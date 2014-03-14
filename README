@@ -1,0 +1,19 @@
+
+This plugin simply forces all guests to go to sign in page if they try to access a forbidden part of the forum.
+
+You can add or remove the page/controller you wish to add to be visible or remove them for  no visibility and send people straight to the sign in page.
+
+If your forum is not in a subdirectory called forum please change this part so it works with your set up .
+
+header('location:/forum/entry/signin');
+
+if it is in the root:
+
+header('location:/entry/signin');
+
+if it has another name:
+
+header('location:/nameofforum/entry/signin');
+
+
+
